@@ -1,0 +1,9 @@
+body{
+    background-color: red;
+    height: 90vh;
+    width: 100%;
+    border: green 2px solid;
+    color: green;
+    font-size: 100px;
+
+}

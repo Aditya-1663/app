@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+form{
+    border: 2px rgb(29, 219, 101) solid;
+    
+    margin:0 500px;
+
+} 
+center{
+    margin: 50px;
+    color: aqua;
+
+}
+ 
