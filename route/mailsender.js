@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 var nodemailer = require('nodemailer');
 var hbs = require('nodemailer-express-handlebars');
-const { EMAIL, PASSWORD } = require('../env')
+
 const htmlFilePath = path.join(__dirname, 'email.html');
 var htmlContent = fs.readFileSync(htmlFilePath,'utf8');
 
