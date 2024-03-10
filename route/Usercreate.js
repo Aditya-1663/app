@@ -96,7 +96,8 @@ async(req,res)=>{
         //  var email1=""
          req.session.email1=req.body.email
         //  console.log(authtoken)
-         res.redirect(`http://localhost:5000/index`)
+         // res.redirect(`http://localhost:5000/index`)
+         res.redirect(`https://chatapp-eoyl.onrender.com/index`)
         //  res.render("index") 
         //  res.json({authtoken})
 
