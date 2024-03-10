@@ -52,7 +52,8 @@ app.get('/verifying/:token', async (req, res) => {
     try {
         const data = jwt.verify(req.params.token, jwtscrect)
         await User.findByIdAndUpdate(data.user.id, { $set: { confirm: true } }, { new: true })
-        res.redirect('http://localhost:5000/')
+        // res.redirect('http://localhost:5000/')
+        res.redirect('https://chatapp-eoyl.onrender.com/')
     } catch (error) {
         console.log(error)
 
@@ -86,7 +87,8 @@ app.get('/', async (req, res) =>{
 var user={}
 app.get('/index', async (req, res) =>{
     if(!req.session.email1){
-        return  res.redirect('http://localhost:5000/')
+        return  res.redirect('https://chatapp-eoyl.onrender.com/')
+        // return  res.redirect('http://localhost:5000/')
     }
      user=await User.findOne({email:req.session.email1})
     const data= await Addfriend.find({myemail:req.session.email1}) 
